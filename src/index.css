@@ -1,1 +1,72 @@
-/* http://www.omdbapi.com/?apikey=[yourkey]& */
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(70, 68, 68);
+}
+
+.search-bar{
+    width: 50%;
+    margin: auto;
+    margin-top: 3rem;
+    /* border: 1px solid gray; */
+}
+
+.search-bar input{
+    width: 100%;
+    font-size: 1rem;
+    border: 1px solid white;
+    border-radius: 2.5rem;
+    padding: .5rem 1rem;
+    outline: none;
+    color: white;
+  
+}
+.movie-cards{
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    gap: 2.5rem;
+    margin:4rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border: 1px solid white;
+   
+}
+.card:hover{
+    background-color: black;
+    box-shadow:7px 6px 13px -9px  white, 5px -5px 10px -8px white, -5px 0 10px -5px white;
+}
+.card img{
+    width: 70%;
+    max-height: 60%;
+    height: 100%;
+    margin: 2rem;
+ 
+}
+.img-link img,.movie-info{
+    transition: transform .5s ease-out ;
+}
+.img-link img:hover{
+    transform: translateY(-20px) scale(1.1);
+}
+.img-link{
+    text-decoration: none;
+    list-style: none;
+}
+.movie-info{
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+.movie-info:hover{
+    transform: translateY(-20px) scale(0.8);
+}
+.search-bar input:hover{
+    box-shadow:7px 6px 13px -9px  white, 5px -5px 10px -8px white, -5px 0 10px -5px white;
+}
